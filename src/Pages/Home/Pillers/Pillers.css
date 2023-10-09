@@ -1,0 +1,82 @@
+.parent {
+  width: 100%;
+}
+.child {
+  transition: all 0.5s;
+}
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+.child::before {
+  content: "";
+  display: none;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+.card-container h4 {
+  padding-top: 30px;
+
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+.text-1 {
+  color: #00c5d7;
+}
+.text-2 {
+  color: #ff9182;
+}
+.text-3 {
+  color: #ae86fa;
+}
+.text-4 {
+  color: #fd92c9;
+}
+.text-5 {
+  color: #70d99b;
+}
+.box0 {
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  background: url("/src/images/add_funds.png");
+  background-size: cover;
+}
+.box1 {
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  background: url("/src/images/fund_transfer.png");
+  background-size: cover;
+}
+.box2 {
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  background: url("/src/images/duranta_offer.jpeg");
+  background-size: cover;
+}
+.box3 {
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  background: url("/src/images/cashback_offer.png");
+  background-size: cover;
+}
+.box4 {
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  background: url("https://i.ibb.co/gSPMpbj/img-6-a69e2bb9.png");
+  background-size: cover;
+}
